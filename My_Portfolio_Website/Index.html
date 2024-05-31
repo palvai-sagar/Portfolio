@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palvai Sagar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio </h1>
+        <p>My Name is Sagar and these is my Personal Portfolio Website and my objective is to </p>
+        <p>enhance my professional skills, capabilities and knowledge in an organization which recognizes the value of hard work and trusts me with responsibilities and challenges.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            My name is Palvai Sagar and i am from Mahabubabad. I completed my B-TECH in Electronics and Communication Engineering (ECE) in 2020 with a 74.9% score. I finished my Intermediate (MPC) in 2016 with an 89.8% score, and my SSC in 2014 with a 77.8% score.I done 
+            a project on Implementataion of RFID based Automated toll collection System and another mini project is Electronic Eye Controlled Security System.
+        </p>
+        <h3>Projects</h3>
+        <ul>
+            <li>
+                <strong>Automated toll collection system:</strong> Using passive radio frequency identification (RFID), this system provides a solution to manual toll collection, improving time efficiency by allowing vehicles to pass through without stopping.
+            </li>
+            <li>
+                <strong>Electronic eye (Magic eye):</strong> A simple electronic security device that uses an LDR sensor to detect visitors to our home.
+            </li>
+        </ul>
+       
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>I offer the following services:</p>
+        <ul>
+            <li>Software Development</li>
+            <li>Web Development</li>
+            <li>Technical Consulting</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Languages: C, JAVA, .Net , HTML, CSS, Sql Server</li>
+            <li>Application Software: MS-WORD, MS-POWERPOINT, MS-Excel</li>
+        </ul>
+        <h3>Professional Skills</h3>
+        <ul>
+            <li>Good communication skills</li>
+            <li>Teamwork</li>
+            <li>Problem solving</li>
+            <li>Decision making</li>
+        </ul>
+        <h3>Languages Known</h3>
+        <ul>
+            <li>English</li>
+            <li>Telugu</li>
+            <li>Hindi</li>
+        </ul>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Surfing the Internet</li>
+            <li>Playing cricket</li>
+            <li>Listening to songs</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <address>
+            <p>Email: <a href="mailto:sagarpalvai5@gmail.com">sagarpalvai5@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919959894712">9959894712</a></p>
+            <p>Address: HNo:- 2-121, Vill:- Beriwada, Mdl:- Kesamudram, Dist:- Mahabubabad ,Pincode: - 506101</p>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Palvai Sagar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+           
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+           
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', (event) => {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
