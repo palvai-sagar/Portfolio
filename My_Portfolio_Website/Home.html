@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sagar portfolio | Responsive Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">Palvai Sagar</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#services" onclick="showSection('services')">Services</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="section__container">
+            <div class="content">
+              
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Sagar<br />a</span> Web Developer
+                </h1>
+                <p class="description">
+                    Welcome to my web developer portfolio! I'm Sagar, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
+                </p>
+                
+                <div class="action__btns">
+                  <button class="downloadCV">Download CV</button>
+              </div>
+            </div>
+            <div class="image">
+                <img src="C:\Users\USER\Downloads\Image.jpg" alt="profile" />
+            </div>
+            <p>
+            <a href="#" class="fa fa-facebook" onclick="openSocialMedia('facebook')"></a>
+            <a href="#" class="fa fa-twitter" onclick="openSocialMedia('twitter')"></a>
+            <a href="#" class="fa fa-instagram" onclick="openSocialMedia('instagram')"></a>
+          </p>
+        </div>
+    </section>
+    
+    <section id="about" class="section hidden">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title">About Us</h1>
+                <p class="description">
+                  I am Palvai Sagar, a software developer with a passion for creating innovative solutions and enhancing user experiences. My educational background and technical skills equip me to excel in this dynamic field.
+              </p>
+              <h2 class="subtitle">Education</h2>
+              <ul>
+                  <li>B-Tech (ECE), 2020 - Percentage: 74.9%</li>
+                  <li>Intermediate (MPC), 2016 - Percentage: 89.8%</li>
+                  <li>SSC, 2014 - Percentage: 77.8%</li>
+              </ul>
+              <b>Skills</b>
+              <ul class="skills-list">
+                  <li>C</li>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+              </ul>
+              <br><br>
+              <p class="description">
+                  My expertise extends to application software such as MS-Word and MS-PowerPoint. With a strong foundation in these languages and tools, I have successfully contributed to various projects and gained valuable experience in software development.
+              </p>
+              <p class="description">
+                  In my career, I have developed a diverse skill set that includes problem-solving, critical thinking, and effective communication. These skills enable me to collaborate efficiently with teams and deliver high-quality solutions that meet the needs of clients and users alike.
+              </p>
+             
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section hidden">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title">Services</h1>
+                <p class="description">
+                  As a web developer, I offer a range of services to help you build and enhance your online presence. My services include:
+              </p>
+              <ul class="service-list">
+                  <li><strong>Website Development:</strong> Creating responsive and dynamic websites using the latest technologies.</li>
+                  <li><strong>Front-end Development:</strong> Crafting visually appealing and user-friendly interfaces with HTML, CSS, and JavaScript.</li>
+                  <li><strong>Back-end Development:</strong> Building robust server-side applications with Node.js, Express, and databases like MongoDB and MySQL.</li>
+                  <li><strong>eCommerce Development:</strong> Building online stores with secure payment gateways and shopping cart functionality.</li>
+                  <li><strong>Website Maintenance:</strong> Providing ongoing support and updates to ensure your website runs smoothly.</li>
+              </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section hidden">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title">Skills</h1>
+                <p class="description">
+                  Here are some of the technical skills I possess:
+              </p>
+              <ul class="skills-list">
+                  <li>C</li>
+                  <li>Java</li>
+                  <li>.NET</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>SQL Database</li>
+              </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section hidden">
+      <div class="section__container">
+          <div class="content">
+              <h1 class="title">Contact Form</h1>
+              
+              <form id="contact-form">
+                  <div class="form-group">
+                      <label for="fullName">Full Name</label>
+                      <input type="text" id="fullName" name="fullName" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="address">Address</label>
+                      <textarea id="address" name="address" required></textarea>
+                  </div>
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+   
+
+  <script>
+   
+    function openSocialMedia(platform) {
+       
+        const socialMediaUrls = {
+            'facebook': 'https://www.facebook.com/your-facebook-profile',
+            'twitter': 'https://twitter.com/your-twitter-profile',
+            'instagram': 'https://www.instagram.com/your-instagram-profile'
+            
+        };
+
+       
+        window.open(socialMediaUrls[platform], '_blank');
+    }
+    function showSection(sectionID) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            if (section.id === sectionID) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        });
+    }
+
+    
+    showSection('home');
+</script>
+</body>
+</html>
